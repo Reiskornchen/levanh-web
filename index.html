@@ -3,74 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Levanh – Impressum & Datenschutz</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #FAF7F2;
-      color: #261C14;
-      line-height: 1.6;
-      margin: 0;
-      padding: 40px 20px;
-    }
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-      color: #261C14;
-    }
-    h2 {
-      font-size: 1.3rem;
-      margin-top: 2rem;
-      border-bottom: 1px solid rgba(38, 28, 20, 0.15);
-      padding-bottom: 0.3rem;
-    }
-    p, li {
-      font-size: 0.95rem;
-      color: #3d3128;
-    }
-    .tagline {
-      color: #627863;
-      font-weight: 600;
-      margin-bottom: 2rem;
-    }
-  </style>
+  <title>Levanh – dein Sauerteig-Begleiter</title>
+  <meta name="description" content="Levanh begleitet dich von der Fütterung bis zum Backtag: mit Peak-Fenster, Kühlschrank-Plan und Backplaner. Alle Daten bleiben auf deinem Gerät.">
+  <meta name="theme-color" content="#FAF7F2">
+  <link rel="icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Levanh</h1>
-    <div class="tagline">Minimalist sourdough companion app</div>
 
-    <section id="impressum">
-      <h2>Impressum</h2>
-      <p>Angaben gemäß § 5 DDG:</p>
-      <p>
-        [Dein vollständiger Vor- und Nachname]<br>
-        [Straße und Hausnummer]<br>
-        [PLZ und Ort]
-      </p>
-      <p>
-        <strong>Kontakt:</strong><br>
-        E-Mail: hello@levanh.com
-      </p>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">Levanh</a>
+      <nav aria-label="Hauptnavigation">
+        <a href="#funktionen">Funktionen</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#tester">Tester werden</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="bubbles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Minimalist sourdough companion</p>
+          <h1>Dein Sauerteig.<br>Dein Rhythmus.</h1>
+          <p class="lead">Levanh begleitet dich von der Fütterung bis zum Backtag: mit Peak-Fenster, Kühlschrank-Plan und Backplaner. Ruhig, klar und ohne Konto.</p>
+          <div class="stores">
+            <span class="store" aria-disabled="true">App Store <small>bald verfügbar</small></span>
+            <span class="store" aria-disabled="true">Google Play <small>bald verfügbar</small></span>
+          </div>
+        </div>
+        <div class="phone" aria-hidden="true">
+          <img src="img/screenshot-1.png" alt="" onerror="this.style.display='none'">
+        </div>
+      </div>
     </section>
 
-    <section id="privacy">
-      <h2>Datenschutzerklärung</h2>
-      <p>Der Schutz deiner Daten ist uns ein wichtiges Anliegen. Die App <strong>Levanh</strong> wurde nach dem Grundsatz der Datensparsamkeit gestaltet.</p>
-      
-      <h3>1. Datenerfassung in der App</h3>
-      <p>Levanh speichert deine Starter-Profile, Zeitpläne, Fütterungszeiten und Notizen ausschließlich <strong>lokal auf deinem Gerät</strong>. Es findet keine Übertragung deiner persönlichen Backdaten an externe Server statt.</p>
-
-      <h3>2. Hosting der Website</h3>
-      <p>Diese Informationsseite wird über GitHub Pages gehostet. Beim Aufruf der Seite erfasst der Anbieter GitHub Inc. technische Verbindungsdaten (Server-Logfiles, z. B. IP-Adresse), um den sicheren Betrieb der Server zu gewährleisten.</p>
-
-      <h3>3. Deine Rechte</h3>
-      <p>Du hast jederzeit das Recht auf Auskunft über deine gespeicherten personenbezogenen Daten. Wende dich bei Fragen direkt an: hello@levanh.com.</p>
+    <!-- FUNKTIONEN -->
+    <section class="section" id="funktionen">
+      <div class="wrap">
+        <h2>Alles, was dein Starter braucht</h2>
+        <p class="section-lead">Weniger Rätselraten, mehr Brot.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Peak-Fenster</h3>
+            <p>Sieh auf einen Blick, wann dein Starter backbereit ist, mit Countdown und Balken, auch im Kühlschrank-Schlaf.</p>
+          </article>
+          <article class="card">
+            <h3>Fütterungsrechner</h3>
+            <p>Stell deinen Wunsch-Peak ein. Reicht die Raumtemperatur nicht, schlägt Levanh dir automatisch einen Kühlschrank-Plan vor.</p>
+          </article>
+          <article class="card">
+            <h3>Backplaner</h3>
+            <p>Rezeptvorlagen oder dein eigenes Rezept: Levanh plant dir die Zeiten rückwärts vom Backtag.</p>
+          </article>
+          <article class="card">
+            <h3>Alles bleibt bei dir</h3>
+            <p>Deine Daten liegen nur auf deinem Gerät. Kein Konto, kein Tracking, Backup per Export und Import.</p>
+          </article>
+        </div>
+      </div>
     </section>
-  </div>
+
+    <!-- AVATARE -->
+    <section class="section section-tint">
+      <div class="wrap">
+        <h2>Dein Starter hat Launen</h2>
+        <p class="section-lead">Jeder Zustand bekommt sein eigenes Gesicht, damit du nicht rechnen musst, um zu wissen, wie es ihm geht.</p>
+        <div class="avatars">
+          <img src="img/avatar-1.png" alt="Starter-Avatar" onerror="this.style.display='none'">
+          <img src="img/avatar-2.png" alt="Starter-Avatar" onerror="this.style.display='none'">
+          <img src="img/avatar-3.png" alt="Starter-Avatar" onerror="this.style.display='none'">
+          <img src="img/avatar-4.png" alt="Starter-Avatar" onerror="this.style.display='none'">
+          <img src="img/avatar-5.png" alt="Starter-Avatar" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </section>
+
+    <!-- SO FUNKTIONIERT'S -->
+    <section class="section">
+      <div class="wrap">
+        <h2>So funktioniert’s</h2>
+        <ol class="steps">
+          <li><strong>Starter anlegen.</strong> Name, Mehl, Hydration, Standort, fertig.</li>
+          <li><strong>Füttern.</strong> Levanh zeigt dir, wann der Peak kommt, und erinnert dich rechtzeitig.</li>
+          <li><strong>Backen.</strong> Wenn das Fenster offen ist, führt dich der Backplaner Schritt für Schritt.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-tint" id="faq">
+      <div class="wrap narrow">
+        <h2>Häufige Fragen</h2>
+        <details>
+          <summary>Sind die Zeiten genau?</summary>
+          <p>Alle Zeiten in Levanh sind Richtwerte. Jeder Starter, jedes Mehl und jede Küche ist anders, schau im Zweifel auf deinen Teig.</p>
+        </details>
+        <details>
+          <summary>Wo werden meine Daten gespeichert?</summary>
+          <p>Ausschließlich lokal auf deinem Gerät. Es gibt keine Übertragung an externe Server. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+        </details>
+        <details>
+          <summary>Für welche Geräte gibt es Levanh?</summary>
+          <p>Levanh erscheint für iPhone und Android. Die Stores folgen in Kürze.</p>
+        </details>
+        <details>
+          <summary>Was kostet Levanh?</summary>
+          <p>Details zum Preismodell geben wir zum Store-Start bekannt.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- TESTER -->
+    <section class="section" id="tester">
+      <div class="wrap">
+        <div class="cta">
+          <h2>Backst du mit Sauerteig?</h2>
+          <p>Wir suchen Tester für die Android-Version. Schreib uns kurz, dann schicken wir dir den Zugang.</p>
+          <a class="btn" href="mailto:hello@levanh.com?subject=Levanh%20Tester">Tester werden</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <span>© 2026 Levanh</span>
+      <nav aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:hello@levanh.com">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+
 </body>
 </html>
