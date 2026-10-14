@@ -313,7 +313,7 @@ details p { margin: 0.8rem 0 0; }
 /* ---------- Responsiv ---------- */
 @media (min-width: 820px) {
   .hero { padding: 96px 0 112px; }
-  .hero-grid { grid-template-columns: 1.2fr 1fr; }
+  .hero-grid:has(.phone) { grid-template-columns: 1.2fr 1fr; }
   .phone { width: 280px; justify-self: end; }
 }
 
