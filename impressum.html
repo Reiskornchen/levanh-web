@@ -4,40 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impressum – Levanh</title>
+  <meta name="description" content="Impressum von Levanh, dem Sauerteig-Begleiter.">
   <meta name="robots" content="noindex">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preload" href="fonts/lora-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
   <header class="site-header">
     <div class="wrap bar">
-      <a class="brand" href="index.html">Levanh</a>
-      <nav><a href="index.html">← Zur Startseite</a></nav>
+      <a class="brand" href="index.html">
+        <picture>
+          <source srcset="img/logo-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="img/logo.png" width="97" height="112" alt="">
+        </picture>
+        Levanh
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html">Zur Startseite</a>
+      </nav>
     </div>
   </header>
 
-  <main class="wrap narrow legal">
+  <main class="wrap legal" id="inhalt">
     <h1>Impressum</h1>
 
     <p>Angaben gemäß § 5 DDG:</p>
     <p>
-      [Mai-Anh Pham]<br>
-      [Anne-Frank-Straße 29]<br>
-      [64295 Darmstadt]
+      Mai-Anh Pham<br>
+      Anne-Frank-Straße 29<br>
+      64295 Darmstadt
     </p>
 
     <h2>Kontakt</h2>
-    <p>E-Mail: <a href="mailto:hello@levanh.com">hello@levanh.com</a></p>
+    <p>E-Mail: <a href="mailto:contact@levanh.com">contact@levanh.com</a></p>
   </main>
 
   <footer class="site-footer">
     <div class="wrap foot">
-      <span>© 2026 Levanh</span>
+      <p>© 2026 Levanh</p>
       <nav aria-label="Rechtliches">
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:contact@levanh.com">Kontakt</a>
       </nav>
     </div>
   </footer>
