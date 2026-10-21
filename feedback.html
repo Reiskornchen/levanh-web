@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tester-Feedback – Levanh</title>
+  <meta name="description" content="Feedback-Seite für Levanh-Tester: Screenshots hochladen und Gedanken teilen.">
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/lora-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <picture>
+          <source srcset="img/logo-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="img/logo.png" width="97" height="112" alt="">
+        </picture>
+        Levanh
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="index.html">Zurück zur Startseite</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Nur während der Testphase. Danach: Seite löschen, Abschnitt 5 in datenschutz.html entfernen, Daten in Tally löschen. -->
+  <main class="wrap feedback" id="inhalt">
+    <p class="label">Testphase</p>
+    <h1>Levanh Tester-Feedback</h1>
+    <p class="lead">Etwas hakt oder fehlt? Lade hier deinen Screenshot hoch.</p>
+
+    <div class="card embed" data-embed="https://tally.so/embed/rDjoNR?alignLeft=1&amp;hideTitle=1">
+      <div class="embed-consent">
+        <p>Das Formular stammt vom Dienst Tally aus Belgien. Erst wenn du auf „Formular laden“ klickst, werden Daten wie deine IP-Adresse an Tally übertragen. Mehr dazu in der <a href="datenschutz.html#feedback">Datenschutzerklärung</a>.</p>
+        <button class="btn btn-primary" type="button" data-embed-load hidden>Formular laden</button>
+        <noscript><p>Ohne JavaScript kann das Formular hier nicht angezeigt werden.</p></noscript>
+        <p class="embed-alt">
+          <a href="https://tally.so/r/rDjoNR" target="_blank" rel="noopener">Formular bei Tally in neuem Tab öffnen</a><br>
+          Lieber per E-Mail? <a href="mailto:contact@levanh.com?subject=Levanh%20Tester-Feedback">contact@levanh.com</a>
+        </p>
+      </div>
+      <p class="embed-status" role="status" aria-live="polite"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>© 2026 Levanh</p>
+      <nav aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:contact@levanh.com">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

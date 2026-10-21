@@ -117,3 +117,33 @@
     label();
   });
 })();
+
+/* ---------- Formular erst nach Klick laden (Tally) ----------
+   Vor dem Klick gibt es keine Anfrage an fremde Server. Die Zustimmung wird nicht gespeichert. */
+(function () {
+  document.querySelectorAll("[data-embed]").forEach(function (box) {
+    var button = box.querySelector("[data-embed-load]");
+    var status = box.querySelector(".embed-status");
+    if (!button) return;
+
+    button.hidden = false;
+    button.addEventListener("click", function () {
+      var frame = document.createElement("iframe");
+      frame.src = box.dataset.embed;
+      frame.title = "Feedback-Formular (Tally)";
+      frame.className = "embed-frame";
+      frame.referrerPolicy = "strict-origin";
+
+      status.textContent = "Formular wird geladen …";
+      box.classList.add("is-loading");
+      frame.addEventListener("load", function () {
+        box.classList.remove("is-loading");
+        status.textContent = "Formular geladen.";
+        frame.focus();
+      });
+
+      box.querySelector(".embed-consent").remove();
+      box.appendChild(frame);
+    });
+  });
+})();

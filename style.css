@@ -482,6 +482,16 @@ a:hover { text-decoration-thickness: 2px; }
 .btn:hover { border-color: var(--text); }
 .btn:active { transform: translateY(1px); }
 
+/* Primärer Button – dunkel wie „I fed my starter“ in der App */
+.btn-primary {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--bg);
+  min-height: 3rem;
+  padding-inline: var(--space-4);
+}
+.btn-primary:hover { background: var(--accent-text); border-color: var(--accent-text); color: var(--bg); }
+
 /* ---------- Hilfe ---------- */
 .help-grid { display: grid; gap: var(--space-6); }
 
@@ -547,6 +557,36 @@ details p { color: var(--muted); padding-bottom: var(--space-3); margin: 0; }
 .legal h1 { font-size: clamp(var(--step-4), 1.6rem + 2.6vw, var(--step-5)); }
 .legal h2 { font-size: var(--step-2); margin-top: var(--space-8); }
 .legal .meta { color: var(--muted); font-size: var(--step--1); }
+
+/* ---------- Feedback (nur Testphase) ---------- */
+.feedback { max-width: calc(42.5rem + 2 * var(--gutter)); padding-block: var(--space-8) var(--space-12); }
+.feedback h1 { font-size: clamp(var(--step-4), 1.6rem + 2.6vw, var(--step-5)); }
+.feedback .lead { margin: 0 0 var(--space-6); max-width: none; }
+
+.embed { padding: var(--space-4); }
+.embed-consent { display: grid; gap: var(--space-3); justify-items: start; }
+.embed-consent p { margin: 0; color: var(--muted); }
+.embed-alt { font-size: var(--step--1); line-height: 1.9; }
+
+/* Tally zeichnet seinen eigenen hellen Hintergrund – deshalb bleibt das Formular in beiden Modi lesbar */
+.embed-frame {
+  display: block;
+  width: 100%;
+  height: min(46rem, 80vh);
+  border: 0;
+  border-radius: calc(var(--radius-card) - var(--space-2));
+  background: var(--surface);
+}
+.embed-status { margin: 0; color: var(--muted); font-size: var(--step--1); }
+.embed.is-loading .embed-status { margin-bottom: var(--space-2); }
+.embed:not(.is-loading) .embed-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
 
 /* ---------- 404 ---------- */
 .notfound {
