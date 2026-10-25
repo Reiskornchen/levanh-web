@@ -228,37 +228,45 @@
       </div>
     </section>
 
-    <!-- FUNKTIONEN -->
+    <!-- FUNKTIONEN: echte App-Screens -->
     <section class="section" id="funktionen" aria-labelledby="funktionen-titel">
-      <div class="wrap features-grid">
-        <div>
+      <div class="wrap">
+        <div class="section-head">
           <h2 id="funktionen-titel">Weniger Rätselraten, mehr Brot.</h2>
-          <p class="muted">Drei Werkzeuge, die dir das Rechnen abnehmen.</p>
-
-          <!-- VIDEO – einblenden, sobald video/levanh.mp4 und video/levanh-poster.jpg existieren.
-               Stumm, unter 5 MB. Beschreibung an den Inhalt anpassen.
-          <figure class="video">
-            <video src="video/levanh.mp4" poster="video/levanh-poster.jpg" width="720" height="1280" muted loop playsinline preload="none" aria-describedby="video-text"></video>
-            <button class="btn" type="button" data-video-toggle>Video abspielen</button>
-            <figcaption id="video-text">[Kurze Beschreibung, was im Video passiert]</figcaption>
-          </figure>
-          -->
         </div>
 
-        <dl class="recipe">
-          <div>
-            <dt>Fütterungsrechner</dt>
-            <dd>Stell deinen Wunsch-Peak ein. Reicht die Raumtemperatur nicht, schlägt Levanh dir automatisch einen Kühlschrank-Plan vor.</dd>
-          </div>
-          <div>
-            <dt>Backplaner</dt>
-            <dd>Rezeptvorlagen oder dein eigenes Rezept: Levanh plant dir die Zeiten rückwärts vom Backtag.</dd>
-          </div>
-          <div>
-            <dt>Erinnerungen</dt>
-            <dd>Levanh sagt dir rechtzeitig Bescheid, wenn der Peak naht oder dein Starter Hunger hat. Die Erinnerungen werden direkt auf deinem Gerät geplant.</dd>
-          </div>
-        </dl>
+        <div class="screens" tabindex="0" role="region" aria-label="Ansichten aus der App">
+          <figure class="screen">
+            <picture>
+              <source srcset="img/screens/fuetterungsrechner.webp" type="image/webp">
+              <img src="img/screens/fuetterungsrechner.png" width="560" height="995" loading="lazy" alt="App-Ansicht „Mila füttern“: Höhepunkt heute um 15:06, in 7 Stunden 34 Minuten, darunter Regler für die Raumtemperatur (22 °C) und das Verhältnis 1 : 3 : 3.">
+            </picture>
+            <figcaption><strong>Fütterungsrechner</strong> Stell deinen Wunsch-Peak ein. Reicht die Raumtemperatur nicht, schlägt Levanh dir automatisch einen Kühlschrank-Plan vor.</figcaption>
+          </figure>
+          <figure class="screen">
+            <picture>
+              <source srcset="img/screens/backplaner.webp" type="image/webp">
+              <img src="img/screens/backplaner.png" width="560" height="997" loading="lazy" alt="App-Ansicht „Backtag planen“: ein Zeitplan mit „Mila füttern“ um 10:15, „Autolyse“ um 13:35 und „Teig mischen“ um 14:20.">
+            </picture>
+            <figcaption><strong>Backplaner</strong> Rezeptvorlagen oder dein eigenes Rezept: Levanh plant dir die Zeiten rückwärts vom Backtag.</figcaption>
+          </figure>
+          <figure class="screen">
+            <picture>
+              <source srcset="img/screens/anzucht.webp" type="image/webp">
+              <img src="img/screens/anzucht.png" width="560" height="995" loading="lazy" alt="App-Ansicht des neuen Starters „Neuling“ an Tag 3: Der Avatar wächst, darunter der Hinweis, dass Füttern jetzt möglich ist.">
+            </picture>
+            <figcaption><strong>Anzucht</strong> Neuer Starter? Jeden Tag die genauen Mengen, das Zeitfenster zum Füttern und was gerade normal ist.</figcaption>
+          </figure>
+        </div>
+
+        <!-- VIDEO – einblenden, sobald video/levanh.mp4 und video/levanh-poster.jpg existieren.
+             Stumm, unter 5 MB. Beschreibung an den Inhalt anpassen.
+        <figure class="video">
+          <video src="video/levanh.mp4" poster="video/levanh-poster.jpg" width="720" height="1280" muted loop playsinline preload="none" aria-describedby="video-text"></video>
+          <button class="btn" type="button" data-video-toggle>Video abspielen</button>
+          <figcaption id="video-text">Kurze Beschreibung, was im Video passiert</figcaption>
+        </figure>
+        -->
       </div>
     </section>
 
@@ -282,40 +290,12 @@
       </div>
     </section>
 
-    <!-- HILFE -->
-    <section class="section" id="hilfe" aria-labelledby="hilfe-titel">
-      <div class="wrap help-grid">
-        <div class="card help-intro">
-          <h2 id="hilfe-titel">Fragen und Antworten</h2>
-          <p>Etwas klappt nicht? Schreib uns kurz, was passiert ist und welches Gerät du nutzt.</p>
-          <a class="mail" href="mailto:contact@levanh.com?subject=Levanh%20Hilfe">contact@levanh.com</a>
-        </div>
-        <div class="faq">
-            <details>
-              <summary>Sind die Zeiten genau?</summary>
-              <p>Alle Zeiten in Levanh sind Richtwerte. Jeder Starter, jedes Mehl und jede Küche ist anders. Schau im Zweifel auf deinen Teig.</p>
-            </details>
-            <details>
-              <summary>Brauche ich ein Konto?</summary>
-              <p>Nein. Du öffnest die App und legst los.</p>
-            </details>
-            <details>
-              <summary>Wo werden meine Daten gespeichert?</summary>
-              <p>Ausschließlich lokal auf deinem Gerät. Es gibt keine Übertragung an externe Server. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-            </details>
-            <details>
-              <summary>Wie sichere ich meine Daten?</summary>
-              <p>Über Export und Import in der App. So kannst du deine Daten auch auf ein neues Gerät mitnehmen.</p>
-            </details>
-            <details>
-              <summary>Für welche Geräte gibt es Levanh?</summary>
-              <p>Levanh erscheint für iPhone und Android. Die Stores folgen in Kürze.</p>
-            </details>
-            <details>
-              <summary>Was kostet Levanh?</summary>
-              <p>Details zum Preismodell geben wir zum Store-Start bekannt.</p>
-            </details>
-        </div>
+    <!-- HILFE / KONTAKT (auch Support-Adresse für die Stores: levanh.com/#hilfe) -->
+    <section class="section contact-section" id="hilfe" aria-labelledby="hilfe-titel">
+      <div class="wrap contact">
+        <h2 id="hilfe-titel">Fragen oder Feedback?</h2>
+        <p>Schreib uns kurz, worum es geht und welches Gerät du nutzt.</p>
+        <a class="mail" href="mailto:contact@levanh.com?subject=Levanh">contact@levanh.com</a>
       </div>
     </section>
 

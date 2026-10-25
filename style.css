@@ -429,18 +429,40 @@ a:hover { text-decoration-thickness: 2px; }
 .stage-info { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-2); }
 .stage .peakbar-fill { transition: transform 700ms var(--ease); }
 
-/* ---------- Funktionen ---------- */
-.features-grid { display: grid; gap: var(--space-6); }
+#funktionen { padding-top: 0; }
 
-.recipe { margin: 0; }
-.recipe div {
+/* ---------- Funktionen: App-Screens ----------
+   Handy: seitlich wischen (Scroll-Snap). Ab 48rem: drei Spalten nebeneinander. */
+.screens {
   display: grid;
-  gap: var(--space-1);
-  padding-block: var(--space-4);
-  border-top: 1px solid var(--line);
+  grid-auto-flow: column;
+  grid-auto-columns: min(72%, 17rem);
+  gap: var(--space-3);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--space-2);
+  margin-inline: calc(-1 * var(--gutter));
+  padding-inline: var(--gutter);
+  scroll-padding-inline: var(--gutter);
 }
-.recipe dt { font-family: var(--serif); font-size: var(--step-2); letter-spacing: -0.01em; }
-.recipe dd { margin: 0; color: var(--muted); max-width: var(--measure); }
+.screens:focus-visible { outline-offset: -2px; }
+.screen { margin: 0; scroll-snap-align: start; }
+.screen img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.screen figcaption { margin-top: var(--space-3); color: var(--muted); font-size: var(--step--1); line-height: 1.6; }
+.screen figcaption strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: var(--serif);
+  font-size: var(--step-1);
+  font-weight: 400;
+  color: var(--text);
+}
 
 /* Video – Platz ist vorbereitet, Inhalt folgt */
 .video { margin: var(--space-6) 0 0; display: grid; gap: var(--space-2); justify-items: start; }
@@ -492,50 +514,19 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .btn-primary:hover { background: var(--accent-text); border-color: var(--accent-text); color: var(--bg); }
 
-/* ---------- Hilfe ---------- */
-.help-grid { display: grid; gap: var(--space-6); }
-
-.help-intro { align-self: start; padding: var(--space-4); }
-.help-intro h2 { font-size: clamp(var(--step-3), 1.4rem + 1.6vw, var(--step-4)); }
-.help-intro p { color: var(--muted); }
-.help-intro .mail {
+/* ---------- Kontakt ---------- */
+.contact-section { padding-top: 0; }
+.contact { display: grid; justify-items: center; text-align: center; }
+.contact h2 { font-size: clamp(var(--step-3), 1.4rem + 1.6vw, var(--step-4)); }
+.contact p { color: var(--muted); margin-inline: auto; }
+.contact .mail {
   display: inline-flex;
   align-items: center;
   min-height: var(--target);
   font-family: var(--serif);
-  font-size: var(--step-1);
+  font-size: var(--step-2);
   word-break: break-word;
 }
-
-.faq { border-bottom: 1px solid var(--line); }
-details { border-top: 1px solid var(--line); }
-summary {
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: var(--target);
-  padding: var(--space-3) var(--space-6) var(--space-3) 0;
-  cursor: pointer;
-  font-size: var(--step-0);
-  list-style: none;
-}
-summary::-webkit-details-marker { display: none; }
-/* feines Plus, das zum Minus wird */
-summary::before,
-summary::after {
-  content: "";
-  position: absolute;
-  right: 0.25rem;
-  top: 50%;
-  width: 0.875rem;
-  height: 1px;
-  background: var(--text);
-  transition: transform var(--dur) var(--ease);
-}
-summary::after { transform: rotate(90deg); }
-details[open] summary::after { transform: rotate(0deg); }
-summary:hover { color: var(--accent-text); }
-details p { color: var(--muted); padding-bottom: var(--space-3); margin: 0; }
 
 /* ---------- Footer ---------- */
 .site-footer { padding-block: var(--space-4); font-size: var(--step--1); color: var(--muted); }
@@ -616,9 +607,7 @@ details p { color: var(--muted); padding-bottom: var(--space-3); margin: 0; }
   .hero { min-height: calc(100svh - var(--header-h)); display: grid; align-items: center; padding-block: var(--space-8); }
   .promise-section { padding-block: calc(var(--space-16) * 1.5); }
   .hero-grid { grid-template-columns: 7fr 5fr; }
-  .features-grid { grid-template-columns: 5fr 7fr; gap: var(--space-12); }
-  .recipe div { grid-template-columns: 13rem 1fr; gap: var(--space-4); align-items: baseline; }
-  .help-grid { grid-template-columns: 5fr 7fr; gap: var(--space-12); }
+  .screens { grid-auto-flow: row; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); overflow: visible; margin-inline: 0; padding-inline: 0; }
 }
 
 /* ---------- Weniger Bewegung ---------- */
