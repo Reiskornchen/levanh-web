@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levanh – dein Sauerteig-Begleiter</title>
+  <meta name="description" content="Levanh begleitet dich von der Fütterung bis zum Backtag: mit Peak-Fenster, Kühlschrank-Plan und Backplaner. Alle Daten bleiben auf deinem Gerät.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F9F7F3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://levanh.com/">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/lora-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Levanh">
+  <meta property="og:url" content="https://levanh.com/">
+  <meta property="og:title" content="Levanh – dein Sauerteig-Begleiter">
+  <meta property="og:description" content="Von der Fütterung bis zum Backtag: Peak-Fenster, Kühlschrank-Plan und Backplaner. Alle Daten bleiben auf deinem Gerät.">
+  <meta property="og:image" content="https://levanh.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html">
+        <picture>
+          <source srcset="img/logo-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="img/logo.png" width="97" height="112" alt="">
+        </picture>
+        Levanh
+      </a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#hilfe">Hilfe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+
+    <!-- EINSTIEG -->
+    <section class="hero" aria-labelledby="titel">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="label">Sauerteig-Begleiter</p>
+          <h1 id="titel">Dein Sauerteig.<br><em>Dein Rhythmus.</em></h1>
+          <p class="lead">Levanh begleitet dich von der Fütterung bis zum Backtag: mit Peak-Fenster, Kühlschrank-Plan und Backplaner. Ruhig, klar und ohne Konto.</p>
+        </div>
+        <figure class="hero-figure">
+          <div class="card stage-card" aria-hidden="true">
+            <div class="stage-head">
+              <p class="stage-name">Mai</p>
+              <p class="stage-meta">Weizen 550 · 100 % Hydration</p>
+            </div>
+            <picture class="stage-pics hero-pic">
+              <source srcset="img/avatars/dark/active_rising.png" media="(prefers-color-scheme: dark)">
+              <img src="img/avatars/active_rising.png" width="768" height="768" alt="" fetchpriority="high">
+            </picture>
+            <div class="stage-info">
+              <p class="countdown"><span class="countdown-kicker">Bereit in</span> <span class="countdown-big">2 h 41 min</span></p>
+              <p class="badge">Steigt</p>
+            </div>
+            <div class="peakbar" style="--value: 0.44">
+              <span class="peakbar-window"></span><span class="peakbar-fill"></span><span class="peakbar-tick"></span>
+            </div>
+            <p class="peakbar-labels"><span>Gefüttert 8:00</span> <span class="peakbar-peak">Peak 14:00</span></p>
+          </div>
+          <figcaption class="visually-hidden">Beispielansicht der App: Der Starter Mai steigt und ist in 2 Stunden 41 Minuten bereit.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- EIN TAG MIT DEINEM STARTER -->
+    <section class="section story" id="ein-tag" aria-labelledby="ein-tag-titel">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label">Ein Beispieltag</p>
+          <h2 id="ein-tag-titel">Ein Tag mit deinem Starter</h2>
+          <p>Levanh zeigt dir in jedem Moment, wie es deinem Starter geht und wann er bereit ist. Alle Zeiten sind Richtwerte, jeder Starter ist anders.</p>
+        </div>
+
+        <div class="story-grid">
+          <ol class="steps">
+            <li class="step">
+              <p class="step-time"><time datetime="08:00">8:00 Uhr</time></p>
+              <h3>Frisch gefüttert</h3>
+              <p>Mehl und Wasser sind drin. Levanh rechnet aus, wann dein Starter seinen Höhepunkt erreicht.</p>
+              <div class="card mini">
+                <picture class="mini-avatar">
+                  <source srcset="img/avatars/dark/well_fed.png" media="(prefers-color-scheme: dark)">
+                  <img src="img/avatars/well_fed.png" width="768" height="768" alt="Zufriedenes Glas mit wenig Teig und roten Wangen" loading="lazy">
+                </picture>
+                <div class="mini-info">
+                  <p class="badge">Gefüttert</p>
+                  <p class="countdown"><span class="countdown-kicker">Bereit in</span> <span class="countdown-big">6 h</span></p>
+                </div>
+                <div class="peakbar" aria-hidden="true" style="--value: 0.02">
+                  <span class="peakbar-window"></span><span class="peakbar-fill"></span><span class="peakbar-tick"></span>
+                </div>
+                <p class="peakbar-labels"><span>Gefüttert <span class="peakbar-fed">8:00</span></span> <span class="peakbar-peak">Peak <span class="peakbar-peak-time">14:00</span></span></p>
+              </div>
+            </li>
+            <li class="step">
+              <p class="step-time"><time datetime="11:00">11:00 Uhr</time></p>
+              <h3>Er wird lebendig</h3>
+              <p>Erste Bläschen, der Teig steigt. Du musst nichts tun.</p>
+              <div class="card mini">
+                <picture class="mini-avatar">
+                  <source srcset="img/avatars/dark/active_rising.png" media="(prefers-color-scheme: dark)">
+                  <img src="img/avatars/active_rising.png" width="768" height="768" alt="Glas halb voll, mit Bläschen und fröhlichem Gesicht" loading="lazy">
+                </picture>
+                <div class="mini-info">
+                  <p class="badge">Steigt</p>
+                  <p class="countdown"><span class="countdown-kicker">Bereit in</span> <span class="countdown-big">3 h</span></p>
+                </div>
+                <div class="peakbar" aria-hidden="true" style="--value: 0.4">
+                  <span class="peakbar-window"></span><span class="peakbar-fill"></span><span class="peakbar-tick"></span>
+                </div>
+                <p class="peakbar-labels"><span>Gefüttert <span class="peakbar-fed">8:00</span></span> <span class="peakbar-peak">Peak <span class="peakbar-peak-time">14:00</span></span></p>
+              </div>
+            </li>
+            <li class="step">
+              <p class="step-time"><time datetime="14:00">14:00 Uhr</time></p>
+              <h3>Peak</h3>
+              <p>Jetzt ist er am kräftigsten. Das Peak-Fenster ist offen: die beste Zeit zum Backen.</p>
+              <div class="card mini">
+                <picture class="mini-avatar">
+                  <source srcset="img/avatars/dark/peak_power.png" media="(prefers-color-scheme: dark)">
+                  <img src="img/avatars/peak_power.png" width="768" height="768" alt="Randvolles Glas mit vielen Bläschen und großen Augen" loading="lazy">
+                </picture>
+                <div class="mini-info">
+                  <p class="badge">Peak</p>
+                  <p class="countdown"><span class="countdown-kicker">Peak-Fenster</span> <span class="countdown-big">Jetzt offen</span></p>
+                </div>
+                <div class="peakbar" aria-hidden="true" style="--value: 0.8">
+                  <span class="peakbar-window"></span><span class="peakbar-fill"></span><span class="peakbar-tick"></span>
+                </div>
+                <p class="peakbar-labels"><span>Gefüttert <span class="peakbar-fed">8:00</span></span> <span class="peakbar-peak">Peak <span class="peakbar-peak-time">14:00</span></span></p>
+              </div>
+            </li>
+            <li class="step">
+              <p class="step-time"><time datetime="17:00">17:00 Uhr</time></p>
+              <h3>Er wird hungrig</h3>
+              <p>Der Teig sinkt langsam zusammen. Levanh erinnert dich rechtzeitig ans Füttern.</p>
+              <div class="card mini">
+                <picture class="mini-avatar">
+                  <source srcset="img/avatars/dark/getting_hungry.png" media="(prefers-color-scheme: dark)">
+                  <img src="img/avatars/getting_hungry.png" width="768" height="768" alt="Glas mit eingesunkenem Teig und besorgtem Gesicht" loading="lazy">
+                </picture>
+                <div class="mini-info">
+                  <p class="badge badge-crust">Hungrig</p>
+                  <p class="countdown"><span class="countdown-kicker">Peak vorbei seit</span> <span class="countdown-big">3 h</span></p>
+                </div>
+                <div class="peakbar" aria-hidden="true" style="--value: 1">
+                  <span class="peakbar-window"></span><span class="peakbar-fill"></span><span class="peakbar-tick"></span>
+                </div>
+                <p class="peakbar-labels"><span>Gefüttert <span class="peakbar-fed">8:00</span></span> <span class="peakbar-peak">Peak <span class="peakbar-peak-time">14:00</span></span></p>
+              </div>
+            </li>
+            <li class="step">
+              <p class="step-time"><time datetime="18:00">18:00 Uhr</time></p>
+              <h3>Ab in den Kühlschrank</h3>
+              <p>Du backst erst morgen? Reicht die Raumtemperatur nicht für deinen Wunsch-Peak, schlägt Levanh dir einen Kühlschrank-Plan vor.</p>
+              <div class="card mini">
+                <picture class="mini-avatar">
+                  <source srcset="img/avatars/dark/cooling_down.png" media="(prefers-color-scheme: dark)">
+                  <img src="img/avatars/cooling_down.png" width="768" height="768" alt="Glas mit Schal und Schneeflocken" loading="lazy">
+                </picture>
+                <div class="mini-info">
+                  <p class="badge">Kühlt ab</p>
+                  <p class="countdown"><span class="countdown-kicker">Bereit in</span> <span class="countdown-big">15 h</span></p>
+                </div>
+                <div class="peakbar" aria-hidden="true" style="--value: 0.03">
+                  <span class="peakbar-window"></span><span class="peakbar-fill"></span><span class="peakbar-tick"></span>
+                </div>
+                <p class="peakbar-labels"><span>Gefüttert <span class="peakbar-fed">18:00</span></span> <span class="peakbar-peak">Peak <span class="peakbar-peak-time">9:00</span></span></p>
+              </div>
+            </li>
+            <li class="step">
+              <p class="step-time"><time datetime="23:00">23:00 Uhr</time></p>
+              <h3>Schlafen in der Kälte</h3>
+              <p>Im Kühlschrank arbeitet er langsam weiter. Der Countdown läuft auch im Schlaf mit.</p>
+              <div class="card mini">
+                <picture class="mini-avatar">
+                  <source srcset="img/avatars/dark/sleeping_rising.png" media="(prefers-color-scheme: dark)">
+                  <img src="img/avatars/sleeping_rising.png" width="768" height="768" alt="Schlafendes Glas, halb voll, mit kleinen Z über dem Deckel" loading="lazy">
+                </picture>
+                <div class="mini-info">
+                  <p class="badge">Schläft</p>
+                  <p class="countdown"><span class="countdown-kicker">Bereit in</span> <span class="countdown-big">10 h</span></p>
+                </div>
+                <div class="peakbar" aria-hidden="true" style="--value: 0.27">
+                  <span class="peakbar-window"></span><span class="peakbar-fill"></span><span class="peakbar-tick"></span>
+                </div>
+                <p class="peakbar-labels"><span>Gefüttert <span class="peakbar-fed">18:00</span></span> <span class="peakbar-peak">Peak <span class="peakbar-peak-time">9:00</span></span></p>
+              </div>
+            </li>
+            <li class="step">
+              <p class="step-time"><time datetime="07:30">7:30 Uhr, am nächsten Morgen</time></p>
+              <h3>Guten Morgen</h3>
+              <p>Raus aus dem Kühlschrank und kurz aufwärmen lassen. Bald ist das Fenster wieder offen, und der Backtag kann beginnen.</p>
+              <div class="card mini">
+                <picture class="mini-avatar">
+                  <source srcset="img/avatars/dark/waking_up.png" media="(prefers-color-scheme: dark)">
+                  <img src="img/avatars/waking_up.png" width="768" height="768" alt="Gähnendes Glas mit roten Wangen" loading="lazy">
+                </picture>
+                <div class="mini-info">
+                  <p class="badge">Wacht auf</p>
+                  <p class="countdown"><span class="countdown-kicker">Bereit in</span> <span class="countdown-big">1 h 30 min</span></p>
+                </div>
+                <div class="peakbar" aria-hidden="true" style="--value: 0.72">
+                  <span class="peakbar-window"></span><span class="peakbar-fill"></span><span class="peakbar-tick"></span>
+                </div>
+                <p class="peakbar-labels"><span>Gefüttert <span class="peakbar-fed">18:00</span></span> <span class="peakbar-peak">Peak <span class="peakbar-peak-time">9:00</span></span></p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNKTIONEN -->
+    <section class="section" id="funktionen" aria-labelledby="funktionen-titel">
+      <div class="wrap features-grid">
+        <div>
+          <h2 id="funktionen-titel">Weniger Rätselraten, mehr Brot.</h2>
+          <p class="muted">Drei Werkzeuge, die dir das Rechnen abnehmen.</p>
+
+          <!-- VIDEO – einblenden, sobald video/levanh.mp4 und video/levanh-poster.jpg existieren.
+               Stumm, unter 5 MB. Beschreibung an den Inhalt anpassen.
+          <figure class="video">
+            <video src="video/levanh.mp4" poster="video/levanh-poster.jpg" width="720" height="1280" muted loop playsinline preload="none" aria-describedby="video-text"></video>
+            <button class="btn" type="button" data-video-toggle>Video abspielen</button>
+            <figcaption id="video-text">[Kurze Beschreibung, was im Video passiert]</figcaption>
+          </figure>
+          -->
+        </div>
+
+        <dl class="recipe">
+          <div>
+            <dt>Fütterungsrechner</dt>
+            <dd>Stell deinen Wunsch-Peak ein. Reicht die Raumtemperatur nicht, schlägt Levanh dir automatisch einen Kühlschrank-Plan vor.</dd>
+          </div>
+          <div>
+            <dt>Backplaner</dt>
+            <dd>Rezeptvorlagen oder dein eigenes Rezept: Levanh plant dir die Zeiten rückwärts vom Backtag.</dd>
+          </div>
+          <div>
+            <dt>Erinnerungen</dt>
+            <dd>Levanh sagt dir rechtzeitig Bescheid, wenn der Peak naht oder dein Starter Hunger hat. Die Erinnerungen werden direkt auf deinem Gerät geplant.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- FOTOS – einblenden, sobald eigene Fotos in img/ liegen (z. B. Glas auf Leinen, Brot im Anschnitt).
+         JPG oder WebP, ca. 1600 px breit, unter 300 KB. width/height an das Foto anpassen, alt-Text beschreiben.
+    <section class="section" aria-label="Eindrücke">
+      <div class="wrap">
+        <figure class="photo">
+          <img src="img/foto-glas.jpg" width="1600" height="1000" alt="" loading="lazy">
+        </figure>
+      </div>
+    </section>
+    -->
+
+    <!-- HALTUNG -->
+    <section class="section promise-section" aria-labelledby="daten-titel">
+      <div class="wrap promise">
+        <h2 class="promise-statement" id="daten-titel">Deine Daten bleiben auf deinem Gerät.</h2>
+        <p>Kein Konto, kein Tracking, keine Server. Sichern kannst du alles per Export und Import.</p>
+        <p><a href="datenschutz.html">Zur Datenschutzerklärung</a></p>
+      </div>
+    </section>
+
+    <!-- HILFE -->
+    <section class="section" id="hilfe" aria-labelledby="hilfe-titel">
+      <div class="wrap help-grid">
+        <div class="card help-intro">
+          <h2 id="hilfe-titel">Fragen und Antworten</h2>
+          <p>Etwas klappt nicht? Schreib uns kurz, was passiert ist und welches Gerät du nutzt.</p>
+          <a class="mail" href="mailto:contact@levanh.com?subject=Levanh%20Hilfe">contact@levanh.com</a>
+        </div>
+        <div class="faq">
+            <details>
+              <summary>Sind die Zeiten genau?</summary>
+              <p>Alle Zeiten in Levanh sind Richtwerte. Jeder Starter, jedes Mehl und jede Küche ist anders. Schau im Zweifel auf deinen Teig.</p>
+            </details>
+            <details>
+              <summary>Brauche ich ein Konto?</summary>
+              <p>Nein. Du öffnest die App und legst los.</p>
+            </details>
+            <details>
+              <summary>Wo werden meine Daten gespeichert?</summary>
+              <p>Ausschließlich lokal auf deinem Gerät. Es gibt keine Übertragung an externe Server. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+            </details>
+            <details>
+              <summary>Wie sichere ich meine Daten?</summary>
+              <p>Über Export und Import in der App. So kannst du deine Daten auch auf ein neues Gerät mitnehmen.</p>
+            </details>
+            <details>
+              <summary>Für welche Geräte gibt es Levanh?</summary>
+              <p>Levanh erscheint für iPhone und Android. Die Stores folgen in Kürze.</p>
+            </details>
+            <details>
+              <summary>Was kostet Levanh?</summary>
+              <p>Details zum Preismodell geben wir zum Store-Start bekannt.</p>
+            </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <p>© 2026 Levanh</p>
+      <nav aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:contact@levanh.com">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
